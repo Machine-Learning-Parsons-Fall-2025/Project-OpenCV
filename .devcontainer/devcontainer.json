@@ -1,0 +1,21 @@
+{
+  "image": "ghcr.io/psam-5020-2025f-a/5020-utils:ml",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "customizations": {
+    "codespaces": { "openFiles": [] },
+    "vscode": {
+      "settings": {
+        "extensions.autoCheckUpdates": false,
+        "extensions.autoUpdate": false,
+        "chat.disableAIFeatures": true
+      },
+      "extensions": [
+        "ms-toolsai.jupyter@2025.7.0",
+        "ms-python.python"
+      ]
+    }
+  }
+}
